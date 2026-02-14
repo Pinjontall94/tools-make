@@ -1,10 +1,8 @@
-1 Announcement
-**************
+# 1 Announcement
 
 The GNUstep Makefile Package version 2.9.3 is now available.
 
-1.1 What is the GNUstep Makefile Package?
-=========================================
+## 1.1 What is the GNUstep Makefile Package?
 
 The makefile package is a simple, powerful and extensible way to write
 makefiles for a GNUstep-based project.  It allows the user to write a
@@ -12,15 +10,13 @@ project without having to deal with the complex issues associated with
 configuration, building, installation, and packaging.  It also allows
 the user to easily create cross-compiled binaries.
 
-1.2 Changes in version ‘2.9.3’
-==============================
+## 1.2 Changes in version ‘2.9.3’
 
    • Added support for ASAN/LSAN builds
 
    • Various minor bugfixes.
 
-1.3 Obtaining gnustep-make
-==========================
+## 1.3 Obtaining gnustep-make
 
 You can get the gnustep-make-2.9.3.tar.gz distribution file at
 <ftp://ftp.gnustep.org/pub/gnustep/core>
@@ -28,9 +24,9 @@ You can get the gnustep-make-2.9.3.tar.gz distribution file at
    It is accompanied by gnustep-make-2.9.3.tar.gz.sig, a PGP signature
 which you can validate by putting both files in the same directory and
 using:
-
+```
      gpg --verify gnustep-make-2.9.3.tar.gz.sig
-
+```
    Signature has been created using the key with the following
 fingerprint:
 
@@ -39,15 +35,11 @@ fingerprint:
    Read the INSTALL file or the GNUstep-HOWTO for installation
 instructions.
 
-1.4 Where do I send bug reports?
-================================
+## 1.4 Where do I send bug reports?
 
-Please log bug reports on the GNUstep project page
-<http://savannah.gnu.org/bugs/?group=gnustep> or send bug reports to
-<bug-gnustep@gnu.org>.
+Please log bug reports on the [GNUstep project page](http://savannah.gnu.org/bugs/?group=gnustep) or send bug reports to [bug-gnustep@gnu.org](mailto:bug-gnustep@gnu.org).
 
-1.5 Obtaining GNUstep Software
-==============================
+## 1.5 Obtaining GNUstep Software
 
-Check out the GNUstep web site.  (<http://www.gnustep.org/>) and the GNU
-web site.  (<http://www.gnu.org/>)
+Check out the [GNUstep web site](http://www.gnustep.org/) and the [GNU
+web site](http://www.gnu.org/).
