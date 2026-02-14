@@ -24,9 +24,9 @@ You can get the gnustep-make-2.9.3.tar.gz distribution file at
    It is accompanied by gnustep-make-2.9.3.tar.gz.sig, a PGP signature
 which you can validate by putting both files in the same directory and
 using:
-```
+
      gpg --verify gnustep-make-2.9.3.tar.gz.sig
-```
+
    Signature has been created using the key with the following
 fingerprint:
 
