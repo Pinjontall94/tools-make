@@ -88,8 +88,8 @@ binaries for those missing combinations.
 
 There are several directories used in a GNUstep environment. The
 directories are relative to a top directory whose name is given by the
-variable `GNUSTEP_SYSTEM_ROOT ($GNUSTEP_SYSTEM_ROOT in a shell or
-$(GNUSTEP_SYSTEM_ROOT) in a makefile)`. Below is the hierarchy of
+variable GNUSTEP_SYSTEM_ROOT (`$GNUSTEP_SYSTEM_ROOT` in a shell or
+`$(GNUSTEP_SYSTEM_ROOT)` in a makefile). Below is the hierarchy of
 GNUstep directories:
 
     $(GNUSTEP_SYSTEM_ROOT)/
@@ -408,7 +408,7 @@ intended for redefining the standard variables or for adding to
 them. The second one is intended for adding additional rules or
 targets.
 
-The makefile package is installed under $(GNUSTEP_SYSTEM_ROOT)/Library/Makefiles.
+The makefile package is installed under `$(GNUSTEP_SYSTEM_ROOT)/Library/Makefiles`.
 
 
 Ovidiu Predescu
