@@ -1,8 +1,6 @@
-1 GNUstep makefile package installation
-***************************************
+# 1 GNUstep makefile package installation
 
-1.1 Introduction
-================
+## 1.1 Introduction
 
 If you are installing this package as part of the GNUstep core
 libraries, read the file GNUstep-HOWTO for more complete instructions on
@@ -20,8 +18,7 @@ particular operating system and CPU. These instructions come with the
 GNUstep-HOWTO and are also located at the GNUstep web site at
 <http://www.gnustep.org>.
 
-1.1.1 Quick Installation Instructions
----------------------
+### 1.1.1 Quick Installation Instructions
 
 To build and install the GNUstep Makefiles, run the following commands:
 
@@ -47,8 +44,7 @@ filesystem layout).
      make
      make install
 
-1.1.2 Enabling Modern Objective-C Features
----------------------
+### 1.1.2 Enabling Modern Objective-C Features
 
 GNUstep supports the legacy GCC runtime, and the modern libobjc2 runtime with
 Objective-C 2.0 Features such as ARC, Blocks (closures),  Synthesised property
@@ -68,8 +64,7 @@ be infered from the runtime version.
   		  --with-library-combo=ng-gnu-gnu \
   	CC="clang" CXX="clang++" CPP="clang -E" LDFLAGS="-fuse-ld=lld"
 
-1.2 Configuration
-=================
+## 1.2 Configuration
 
 The GNUstep packages uses the Autoconf mechanism for configuration; it
 checks some host capabilties which are used by all GNUstep software.  To
@@ -120,8 +115,7 @@ debug=yes" compiles using static libraries with debugging information.
 (Make sure you use the same switches for every package you compile, and
 also when you install).
 
-1.2.1 Backend Bundles
----------------------
+### 1.2.1 Backend Bundles
 
 By default, the gnustep-make package specifies that GUI backends are
 built as a bundle and loaded in at runtime.  This allows one to switch
@@ -133,8 +127,7 @@ be disabled using
 
    in the arguments to configure.
 
-1.2.2 Alternate Library Setup
------------------------------
+### 1.2.2 Alternate Library Setup
 
 You can specify compilation of alternate libraries by using the
 with-library-combo option.
@@ -144,8 +137,7 @@ with-library-combo option.
    to compile with Apple's runtime on Darwin, for example.  See the
 DESIGN document for more examples of the variety of library combos.
 
-1.2.3 Alternate Thread Library
-------------------------------
+### 1.2.3 Alternate Thread Library
 
 You can specify compilation of an alternate thread library from the one
 that is normally used (or if GNUstep does not know what your normal
@@ -162,8 +154,7 @@ variable when calling configure:
 
      CPPFLAGS="-I/usr/local/include" ./configure --with-thread-lib="-L/usr/local/lib -lgthread -lglib"
 
-1.2.4 Configuring for a non-flattened structure
------------------------------------------------
+### 1.2.4 Configuring for a non-flattened structure
 
 GNUstep is normally configured to support a single target/combo.  If you
 are interested in supporting more than one target and/or combo, it's
@@ -175,8 +166,7 @@ to configure.  You might also want to supply the
    In a flattened structure, files are stored at the top-level rather
 than in a '$(GNUSTEP_CPU)/$(GNUSTEP_OS)/$(LIBRARY_COMBO)' subdirectory.
 
-1.2.5 Configuring for a cross-compile target
---------------------------------------------
+### 1.2.5 Configuring for a cross-compile target
 
 By default when you run configure, it assumes that you want to create
 executables for the same host that you are compiling on; however, the
@@ -205,8 +195,7 @@ the make package several times.
      ./configure --disable-flattened --enable-multi-platform --target=alpha-linux-gnu
      make install
 
-1.3 Installation
-================
+## 1.3 Installation
 
 After you configure the GNUstep makefile package, you can go straight
 into installation (there is nothing to compile):
@@ -217,8 +206,7 @@ into installation (there is nothing to compile):
 still be some minor administration to be performed, depending on your
 configuration.
 
-1.4 Setting up the GNUstep environment
-======================================
+## 1.4 Setting up the GNUstep environment
 
 GNUstep-make will install all programs and libraries in the directories
 specified by the filesystem layout that you choose.
@@ -231,8 +219,7 @@ directories.
 non-flattened), and on the amount of advanced options that you want to
 use.
 
-1.4.1 Flattened (default) Setup
--------------------------------
+### 1.4.1 Flattened (default) Setup
 
 In a flattened setup (the default unless you use the -disable-flattened
 configure argument), you can use a simple setup where you just need to
@@ -251,8 +238,7 @@ on GNU/Linux).
    To build software, you also need to set GNUSTEP_MAKEFILES. (PS: This
 requirement is likely to go away soon)
 
-1.4.2 Non-Flattend (fat binary) Setup
--------------------------------------
+### 1.4.2 Non-Flattend (fat binary) Setup
 
 (Advanced configuration)
 
@@ -281,8 +267,7 @@ whole system (for example, '/etc/profile' on GNU/Linux).
 software using gnustep-make and to run software installed by
 gnustep-make.
 
-1.5 Setting up your GNUstep User domain
-=======================================
+## 1.5 Setting up your GNUstep User domain
 
 (Advanced configuration)
 
@@ -307,8 +292,7 @@ instead of ~/GNUstep:
 
      GNUSTEP_USER_DIR=Test/GNUstep
 
-1.6 Having multiple gnustep-makes installed at the same time
-============================================================
+## 1.6 Having multiple gnustep-makes installed at the same time
 
 (Advanced configuration)
 
